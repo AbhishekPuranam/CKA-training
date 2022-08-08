@@ -4,7 +4,7 @@ run : kubectl apply -f components.yaml
 ```
 ### Patch the metrics server for killercoda
 ```sh
-run : kubectl patch deployments -n kube-system metrics-server -p '{"spec": {"template": {"spec": {"nodeSelector": {"kubernetes.io/hostname": "k8s-master"}}
+run : kubectl patch deployments -n kube-system metrics-server -p '{"spec": {"template": {"spec": {"nodeSelector": {"kubernetes.io/hostname": "k8s-master"}}}}}'
 ```
 ### check if the Deployment is ready
 ```sh
