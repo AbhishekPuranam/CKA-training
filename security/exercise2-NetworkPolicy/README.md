@@ -5,7 +5,7 @@ run : kubectl apply -f setup.yaml
 
 ### Problem Statements
 
-``` ```
+
 
 Question1: Create a Network Policy ``` baby-policy ``` in ``` family ``` namespace, so that only ``` mother ``` pod in ``` mother``` namespace should be able to send  traffic to ``` baby ``` service . You need to restrict all the traffic going from ``` baby ``` .
 
