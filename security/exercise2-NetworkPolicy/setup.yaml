@@ -1,0 +1,224 @@
+--- 
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: family
+spec: {}
+status: {}
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: mother
+spec: {}
+status: {}
+
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: father
+spec: {}
+status: {}
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: baby
+  name: baby
+  namespace: family
+spec:
+  containers:
+  - image: nginx
+    name: baby
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: mother
+  name: mother
+  namespace: family
+spec:
+  containers:
+  - image: nginx
+    name: mother
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: father
+  name: father
+  namespace: family
+spec:
+  containers:
+  - image: nginx
+    name: father
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: mother
+  name: mother
+  namespace: mother
+spec:
+  containers:
+  - image: nginx
+    name: mother
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: father
+  name: father
+  namespace: father
+spec:
+  containers:
+  - image: nginx
+    name: father
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: baby
+  name: baby
+  namespace: family
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: baby
+status:
+  loadBalancer: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: mother
+  name: mother
+  namespace: family
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: mother
+status:
+  loadBalancer: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: father
+  name: father
+  namespace: family
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: father
+status:
+  loadBalancer: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: mother
+  name: mother
+  namespace: mother
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: mother
+status:
+  loadBalancer: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: father
+  name: father
+  namespace: father
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: father
+status:
+  loadBalancer: {}
