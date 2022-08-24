@@ -1,0 +1,107 @@
+---
+  
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: application
+spec: {}
+status: {}
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: eat
+  name: eat
+  namespace: application
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eat
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: eat
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: fit
+  name: fit
+  namespace: application
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fit
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: fit
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: eat
+  name: eatsvc
+  namespace: application
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+    nodePort: 30000
+  selector:
+    app: eat
+status:
+  loadBalancer: {}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: fit
+  name: fitsvc
+  namespace: application
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+    nodePort: 31000
+  selector:
+    app: fit
+status:
+  loadBalancer: {}
