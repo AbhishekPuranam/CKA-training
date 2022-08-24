@@ -5,7 +5,7 @@ run : kubectl apply -f setup.yaml
 
 ### Problem Statements
 
-- In the namespace ``` office ``` create a configmap ```officecm ``` with literals ``` empl1=radha ```, ``` empl2=rahim ``` and ``` empl2=robert ```. 
+- In the namespace ``` office ``` create a configmap ```officecm ``` with literals ``` empl1=radha ```, ``` empl2=rahim ``` and ``` empl3=robert ```. 
 - In the namespace ``` office ``` create a secret ```officesecret ``` with literals ``` pass1=radha123 ```, ``` pass2=rahim123 ``` and ``` pass3=robert123 ```
 
 
