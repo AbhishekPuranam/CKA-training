@@ -11,8 +11,10 @@
 - Pod Lifecycle: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/
 - Namespaces : https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
 - Deployments: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+- Create Pod: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#run
+- Create Deployment: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-deployment-em-
 
-## LABs
+## LAB
 
 ### Problem Statement
 
