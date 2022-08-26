@@ -1,3 +1,15 @@
+### Study Materials
+ - Check Kubernetes Pod and CPU: https://www.youtube.com/watch?v=i69Ss6TEGzs
+ - Kubernetes Probes: https://www.youtube.com/watch?v=mxEvAPQRwhw
+
+### K8s Reference links
+
+- Check CPU and Memory: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#top
+-  Probes: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+
+
+## LAB
+
 ### Setup for Metrics Server
 ```sh
 run : kubectl apply -f components.yaml
