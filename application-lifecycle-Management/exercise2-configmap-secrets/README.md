@@ -9,7 +9,7 @@ run : kubectl apply -f setup.yaml
 - In the namespace ``` office ``` create a secret ```officesecret ``` with literals ``` pass1=radha123 ```, ``` pass2=rahim123 ``` and ``` pass3=robert123 ```
 
 
-- Question1: Create a pod ``` mountcm ``` in ``` office ``` namespace with image as ``` redis ```. Mount the configmap ``` officecm`` to the pod.
+- Question1: Create a pod ``` mountcm ``` in ``` office ``` namespace with image as ``` redis ```. Mount the configmap ``` officecm``` to the pod.
 - Question2: Create a pod ``` mountsecret ``` in ``` office ``` namespace with image as ``` redis ```. Mount the secret ``` officesecret``` to the pod.
 - Question3: Create a pod ``` envcm ``` in ``` office ``` namespace with image as ``` redis ```. Ensure configmap ``` officecm ``` is loaded as environment variables in the pod.
 - Question4: Create a pod ``` envsecret ``` in ``` office ``` namespace with image as ``` redis ```. Ensure secret ``` officesecret ``` is loaded as environment variables in the pod.
