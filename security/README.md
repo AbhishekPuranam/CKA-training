@@ -9,8 +9,6 @@
 
 ### K8s Reference links
 
-- DNS for service: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#namespaces-of-services
-- DNS for pods: https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#a-aaaa-records-1
 - Create Service Account: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-serviceaccount-em-
 - Certificate Signing request: https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#create-certificatesigningrequest
 - Create Roles: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-role-em-
