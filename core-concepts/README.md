@@ -13,6 +13,7 @@
 - Deployments: https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 - Create Pod: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#run
 - Create Deployment: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-deployment-em-
+- Scale Deployment: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#scale
 
 ## LAB
 
