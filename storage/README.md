@@ -13,4 +13,4 @@
 
 
 ## LAB
- Visit individual folders
+ Visit individual exercise folders
