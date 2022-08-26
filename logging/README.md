@@ -32,3 +32,4 @@ metrics-server |   1/1  | 1 | 1
 run: kubectl top pods
 run: kubectl top nodes
 ```
+### once done go to exercise1 folder to start exercise
