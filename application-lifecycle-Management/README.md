@@ -15,8 +15,8 @@
 - Using Secrets as a container Environment Variable (EnvFrom) : https://kubernetes.io/docs/concepts/configuration/secret/#use-case-as-container-environment-variables
 - Using Secrets as a Environment variable ( valueFrom): https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-environment-variables
 - Mount ConfigMap: https://kubernetes.io/docs/concepts/configuration/configmap/#using-configmaps-as-files-from-a-pod
-- Using ConfigMap as a container Environment Variable (EnvFrom): https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#use-configmap-defined-environment-variables-in-pod-commands
-- Using ConfigMap as a Environment variable ( valueFrom): https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#configure-all-key-value-pairs-in-a-configmap-as-container-environment-variables
+- Using ConfigMap as a Environment variable ( EnvFrom): https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#configure-all-key-value-pairs-in-a-configmap-as-container-environment-variables
+- Using ConfigMap as a container Environment Variable (ValueFrom): https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#use-configmap-defined-environment-variables-in-pod-commands
 - init containers: https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
 - How pods manage multiplecontainers: https://kubernetes.io/docs/concepts/workloads/pods/#how-pods-manage-multiple-containers
 - Sidecar containers: https://kubernetes.io/docs/tasks/access-application-cluster/communicate-containers-same-pod-shared-volume/#creating-a-pod-that-runs-two-containers
