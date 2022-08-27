@@ -9,6 +9,8 @@
 ### K8s Reference links
 
 - Create Environment Variables: https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/#define-an-environment-variable-for-a-container
+- Command to create ConfigMap: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-configmap-em-
+- Command to Create Secrets: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-secret-generic-em-
 - Mount Secrets: https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod
 - Using Secrets as a container Environment Variable (EnvFrom) : https://kubernetes.io/docs/concepts/configuration/secret/#use-case-as-container-environment-variables
 - Using Secrets as a Environment variable ( valueFrom): https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-environment-variables
