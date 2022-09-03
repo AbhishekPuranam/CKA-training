@@ -1,0 +1,1 @@
+Create a deployment ```backup``` with 3 replicas and image as ```nginx ``` . Take a backup of etcd with filename ``` etcd.db ``` . Delete the deployment. Restore etcd and check if the deployment ```backup``` is restored and running.
