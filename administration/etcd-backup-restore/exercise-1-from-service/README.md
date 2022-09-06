@@ -1,4 +1,7 @@
 ### setup for service 
+
+try this on https://killercoda.com/playgrounds/scenario/ubuntu
+
 ```sh
 run : sh setup.sh
 
