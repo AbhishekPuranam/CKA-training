@@ -167,6 +167,7 @@ sudo mv /tmp/s1.service /etc/systemd/system/s1.service
 sudo systemctl daemon-reload
 sudo systemctl enable s1.service
 sudo systemctl start s1.service
+apt  install etcd-client -y
 
 ETCDCTL_API=3 /tmp/test-etcd/etcdctl \
   --endpoints localhost:2379 \
